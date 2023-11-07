@@ -29,7 +29,7 @@ app.get("/numbers", (req, res) => {
   res.send(`numbers are: ${numbers}`);
 });
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.send("u visited test");
 });
 
