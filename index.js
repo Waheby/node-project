@@ -131,7 +131,7 @@ app.get("/showArticles", async(req, res) => {
   res.render("articles.ejs", {
     allArticles: articles
   })
-})
+});
 
 app.listen(3000, () => {
   console.log("im listening in port 3000");
