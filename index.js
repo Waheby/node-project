@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://WahebyAdminMemoriesProject:donthackme22@atlasclu
   console.log("connected to database successfully")
 
 }).catch((error) => {
-  console.log("error in connecting database")
+  console.log("error in connecting database", error)
 })
 
 app.put("/hello", (req, res) => {
