@@ -1,11 +1,12 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const Article = require("./models/Article")
+const mongoose = require('mongoose'); //for mongodb database management
 
-const app = express();
+const Article = require("./models/Article") //this is the model for article db scheme
+
+const app = express(); //a good practice is to place the express() method into a const
 
 
-app.use(express.json()); //we need this line if we want to include body paramters
+app.use(express.json()); //we need this line if we want to include body paramters json way
 
 mongoose.connect("mongodb+srv://WahebyAdminMemoriesProject:donthackme22@atlascluster.wzsvziu.mongodb.net/?retryWrites=true&w=majority")
 .then((response) => {
